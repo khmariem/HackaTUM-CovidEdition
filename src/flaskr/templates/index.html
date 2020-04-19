@@ -1,2 +1,13 @@
-<!DOCTYPE html>
-<title>Hello</title>
+{% extends 'base.html' %}
+{% block header %}
+<h1>{% block title %}Daily Information{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+    <form method="post">
+        <label for="Main Activity">Main Activity</label>
+        <input name="Main Activity" id="main" required>
+        <label for="nb">Number of hours</label>
+        <input type="nb" name="nb" id="nb" required>
+        <input type="submit" vlaue="Register">
+    </form>
+{% endblock %}
